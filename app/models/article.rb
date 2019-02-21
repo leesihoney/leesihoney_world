@@ -4,6 +4,6 @@ class Article < ApplicationRecord
 
     # Scope
     scope :alphabetical, -> { order(:title) }
-    scope active, -> { where(active: true)}
+    scope :active, -> { where(active: true)}
 
 end
